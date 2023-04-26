@@ -16,13 +16,14 @@ steps:
     azureResourceManagerConnection: 'ARM Service'
     subscriptionId: '9879e31a-5ede-483a-b360-716e798be754'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'myResourceGroup'
+    resourceGroupName: 'NewRG'
     location: 'Central US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/pbhushan7/ARMPipeline-repo/main/create_web_app/azuredeploy.json'
     overrideParameters: '-projectname DemoProject'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
+    addSpnToEnvironment: true
 
 
 
